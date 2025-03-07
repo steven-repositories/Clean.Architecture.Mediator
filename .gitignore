@@ -3,4 +3,20 @@
 /Clean.Architecture.Mediator.API/obj
 /Clean.Architecture.Mediator.API/*.user
 
+/Clean.Architecture.Mediator.Application/bin
+/Clean.Architecture.Mediator.Application/obj
+/Clean.Architecture.Mediator.Application/*.user
+
+/Clean.Architecture.Mediator.Data/bin
+/Clean.Architecture.Mediator.Data/obj
+/Clean.Architecture.Mediator.Data/*.user
+
+/Clean.Architecture.Mediator.Infrastructure/bin
+/Clean.Architecture.Mediator.Infrastructure/obj
+/Clean.Architecture.Mediator.Infrastructure/*.user
+
+/Clean.Architecture.Mediator.Shared/bin
+/Clean.Architecture.Mediator.Shared/obj
+/Clean.Architecture.Mediator.Shared/*.user
+
 publish/

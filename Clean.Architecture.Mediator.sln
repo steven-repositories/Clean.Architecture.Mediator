@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Mediator.API", "Clean.Architecture.Mediator.API\Clean.Architecture.Mediator.API.csproj", "{333B65BA-69DF-471C-B7C0-6FD35D35100E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Mediator.API", "Clean.Architecture.Mediator.API\Clean.Architecture.Mediator.API.csproj", "{333B65BA-69DF-471C-B7C0-6FD35D35100E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Mediator.Application", "Clean.Architecture.Mediator.Application\Clean.Architecture.Mediator.Application.csproj", "{A5C59D56-4D49-495D-A538-4622B351E288}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Mediator.Infrastructure", "Clean.Architecture.Mediator.Infrastructure\Clean.Architecture.Mediator.Infrastructure.csproj", "{912C60B6-1F06-41DE-981C-A9677996EB89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean.Architecture.Mediator.Shared", "Clean.Architecture.Mediator.Shared\Clean.Architecture.Mediator.Shared.csproj", "{D5D77C2D-9C29-42D9-B451-FAA9BA7C528E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clean.Architecture.Mediator.Data", "Clean.Architecture.Mediator.Data\Clean.Architecture.Mediator.Data.csproj", "{034222EE-49E6-4E8D-983B-241FD6007FBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +23,27 @@ Global
 		{333B65BA-69DF-471C-B7C0-6FD35D35100E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{333B65BA-69DF-471C-B7C0-6FD35D35100E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{333B65BA-69DF-471C-B7C0-6FD35D35100E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C59D56-4D49-495D-A538-4622B351E288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C59D56-4D49-495D-A538-4622B351E288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C59D56-4D49-495D-A538-4622B351E288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C59D56-4D49-495D-A538-4622B351E288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912C60B6-1F06-41DE-981C-A9677996EB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912C60B6-1F06-41DE-981C-A9677996EB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912C60B6-1F06-41DE-981C-A9677996EB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912C60B6-1F06-41DE-981C-A9677996EB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D77C2D-9C29-42D9-B451-FAA9BA7C528E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D77C2D-9C29-42D9-B451-FAA9BA7C528E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D77C2D-9C29-42D9-B451-FAA9BA7C528E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D77C2D-9C29-42D9-B451-FAA9BA7C528E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{034222EE-49E6-4E8D-983B-241FD6007FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034222EE-49E6-4E8D-983B-241FD6007FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034222EE-49E6-4E8D-983B-241FD6007FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034222EE-49E6-4E8D-983B-241FD6007FBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFA52E74-7E1D-4521-9FBD-E76222E0A074}
 	EndGlobalSection
 EndGlobal
