@@ -1,0 +1,6 @@
+/.vs/
+/Clean.Architecture.Mediator.API/bin
+/Clean.Architecture.Mediator.API/obj
+/Clean.Architecture.Mediator.API/*.user
+
+publish/
