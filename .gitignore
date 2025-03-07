@@ -19,4 +19,12 @@
 /Clean.Architecture.Mediator.Shared/obj
 /Clean.Architecture.Mediator.Shared/*.user
 
+/Clean.Architecture.Mediator.IntegrationTests/bin
+/Clean.Architecture.Mediator.IntegrationTests/obj
+/Clean.Architecture.Mediator.IntegrationTests/*.user
+
+/Clean.Architecture.Mediator.UnitTests/bin
+/Clean.Architecture.Mediator.UnitTests/obj
+/Clean.Architecture.Mediator.UnitTests/*.user
+
 publish/
