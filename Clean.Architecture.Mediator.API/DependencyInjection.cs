@@ -54,6 +54,8 @@ namespace Clean.Architecture.Mediator.API {
             services.AddHttpContextAccessor();
             services.AddOpenTelemetry(config);
 
+            services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
+
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(MediatRAnchor).Assembly));
             services.AddValidatorsFromAssembly(typeof(MediatRAnchor).Assembly);
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(FluentValidationBehaviour<,>));
