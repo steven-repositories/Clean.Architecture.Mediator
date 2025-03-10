@@ -62,7 +62,7 @@ namespace Clean.Architecture.Mediator.API {
                 options.UseSqlServer(config.GetConnectionString("Mediator")!));
 
             services.AddCors(cors =>
-                cors.AddPolicy(name: "DefaultCorsPolicy",
+                cors.AddPolicy(nameof(Cors.DefaultCorsPolicy),
                     policy => policy.WithOrigins(config.GetSection(nameof(Cors))
                         .GetSection(nameof(Cors.AllowedOrigins))
                         .Get<string[]>()!
@@ -75,7 +75,8 @@ namespace Clean.Architecture.Mediator.API {
         }
 
         private static IServiceCollection AddOpenTelemetry(this IServiceCollection services, IConfiguration config) {
-            var openTelemetryConfig = config.GetSection(nameof(Shared.Configuration.OpenTelemetry));
+            var openTelemetryConfig = config
+                .GetSection(nameof(Shared.Configuration.OpenTelemetry));
 
             if (!openTelemetryConfig.Exists()) {
                 Log.Warning("OpenTelemetry configuration section not found.");
@@ -101,7 +102,7 @@ namespace Clean.Architecture.Mediator.API {
 
             services
                 .AddOpenTelemetry()
-                .ConfigureResource(r => r.AddService(serviceName: openTelemetryServiceName))
+                .ConfigureResource(resource => resource.AddService(openTelemetryServiceName))
                 .WithTracing(tracing => {
                     tracing.AddAspNetCoreInstrumentation();
                     tracing.AddHttpClientInstrumentation();
